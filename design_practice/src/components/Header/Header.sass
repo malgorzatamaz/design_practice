@@ -1,0 +1,39 @@
+.footer
+    display: flex
+    align-items: center
+
+    & a
+        margin: $m-sm
+        text-decoration: none
+
+    &__link
+        color: $text-color
+        font-size: $font-sm
+
+    &__button
+        background-image: linear-gradient(white, gray)
+        border-radius: 3px
+        border: solid 1px $text-color
+        color: $text-color
+        font-size: $font-xs
+        font-weight: 800
+        height: 30px
+        line-height: 30px
+        text-align: center
+        width: 80px
+
+    &__button-accent
+        background-image: linear-gradient($accent-gradient-1, $accent-gradient-2)
+        border-radius: 3px
+        border: solid 1px $accent-gradient-2
+        color: white
+        font-size: $font-xs
+        font-weight: 800    
+        height: 30px
+        line-height: 30px
+        text-align: center
+        width: 80px
+
+    &__icon
+        margin-right: auto
+        margin-top: $m-sm
