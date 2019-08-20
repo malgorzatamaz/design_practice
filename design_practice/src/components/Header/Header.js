@@ -22,10 +22,10 @@ const Header = () => {
       <a href="#business" className="footer__link">
         Business
       </a>
-      <a href="#log_in" className="footer__button">
+      <a href="#log_in" className="button">
         LOG IN
       </a>
-      <a href="#sign_up" className="footer__button-accent">
+      <a href="#sign_up" className="button -accent">
         SIGN UP
       </a>
     </div>

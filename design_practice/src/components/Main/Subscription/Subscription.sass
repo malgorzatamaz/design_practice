@@ -1,7 +1,27 @@
 .subscription
+    display: flex
+    justify-content: space-between
+    padding-top: 80px        
+
     &__title
         font-size: $font-size-xl
         font-weight: 600
 
     &__subtitle
         font-size: $font-size-lg
+
+    &__actions
+        display: flex
+        font-size: $font-size-xs
+
+    // &__button-wrapper
+    //     flex: 1   
+
+    &__section
+        flex: 0 1 calc(50% - $m-md)
+
+    &__image
+        width: 100%
+
+    &__form label
+        display: block
