@@ -1,13 +1,15 @@
 import React from "react"
-import Subscription from "./Subscription"
 
-import Features from "./Features/Features"
+import Features from "./Features"
+import MainSubscription from "./Subscription/MainSubscription"
+import SubscriptionBar from "./Subscription/SubscriptionBar"
 
 const Main = () => {
   return (
     <React.Fragment>
-      <Subscription />
+      <MainSubscription />
       <Features />
+      <SubscriptionBar />
     </React.Fragment>
   )
 }

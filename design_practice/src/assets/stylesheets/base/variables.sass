@@ -4,7 +4,8 @@ $font-size-xl:                    30px
 $font-size-lg:                    20px
 $font-size-base:                  16px
 $font-size-sm:                    14px
-$font-size-xs:                    10px
+$font-size-xs:                    12px
+$font-size-xxs:                   10px
 
 $line-height-base:                1.25
 $line-height-sm:                  1
@@ -20,29 +21,35 @@ $m-xl:                            $m-base * 2
 $m-xxl:                           $m-base * 2.5
 
 //----- border radiuses ------------------------------------------------------------------------------------------------
-$border-radius-base:              $m-base
-$border-radius-sm:                $m-xs
-$border-radius-lg:                $m-lg
+$border-radius:                   3px
 
 //----- breakpoints ----------------------------------------------------------------------------------------------------
 $grid-breakpoints:                (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
 $container:                       map-get($grid-breakpoints, xl)
 
 //----- colors ---------------------------------------------------------------------------------------------------------
-$primary: #63c431
-$background-gradient-1: #f8fafb
-$background-gradient-2: #ffffff
-$accent-gradient-1: #8b32a8
-$accent-gradient-2: #9342ad
-$text-color: #363636
+$primary-gradient-1:              #63c431
+$primary-gradient-2:              #5fc22d
 
-$color-black:                     #04080c
-$color-gray-dark:                 hsl(36, 5%, 38%)
+$accent-gradient-1:               #8b32a8
+$accent-gradient-2:               #9342ad
+
+$dark-accent-1:                   #5b32a4
+$dark-accent-2:                   #492789
+
+$bar-gradient-1:                  #713fcb
+$bar-gradient-2:                  #8d5fde
+    
+$light-grey:                      #f8fafb
+$text-color:                      #363636
+$black:                           #04080c
+$gray-30:                         hsl(36, 5%, 30%)
+$gray-40:                         hsl(36, 5%, 40%)
+$gray-50:                         hsl(36, 5%, 50%)
 $color-gray:                      hsl(36, 5%, 62%)
-$color-gray-light:                hsl(36, 5%, 75%)
-$color-white:                     #ffffff
-
-$placeholder-color:               $color-gray
+$gray-75:                         hsl(36, 5%, 75%)
+$gray-98:                         hsl(36, 5%, 98%)
+$white:                           #ffffff
 
 //----- fonts ----------------------------------------------------------------------------------------------------------
 $font-family-header:              'Rubik'

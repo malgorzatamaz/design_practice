@@ -1,9 +1,9 @@
 import React from "react"
-import movie from "../../../assets/images/movie.png"
+import movie from "../../../../assets/images/movie.png"
 
-import "./Subscription.sass"
+import "./MainSubscription.sass"
 
-const Subscription = () => {
+const MainSubscription = () => {
   return (
     <div className="subscription">
       <div className="subscription__section">
@@ -14,8 +14,10 @@ const Subscription = () => {
         />
       </div>
       <div className="subscription__section">
-        <div className="subscription__title">
-          Communicate. Collaborate. Complete.
+        <div className="subscription__title bold-text">
+          Communicate.
+          <br />
+          Collaborate. Complete.
         </div>
         <div className="subscription__subtitle">
           The remote collaboration tool to help you communicate effectively &
@@ -23,21 +25,20 @@ const Subscription = () => {
         </div>
         <div className="subscription__form">
           <label>Email address</label>
-          <input type="text" />
+          <input type="email" id="exampleFormControlInput1" />
           <div className="subscription__actions">
             <div>
               <div>
-                Try droplr <span>PRO for free for 30 days</span>
+                Try droplr
+                <span className="bold-text"> PRO for free for 30 days</span>
               </div>
               <div>
-                No credit card needed. <span>Privacy policy</span>
+                No credit card needed. <a href="#policy">Privacy policy</a>
               </div>
             </div>
-            {/* <div className="subscription__button-wrapper"> */}
-            <a className="button -primary" href="#start">
+            <button className="button -primary" href="#start">
               Get started
-            </a>
-            {/* </div> */}
+            </button>
           </div>
         </div>
       </div>
@@ -45,4 +46,4 @@ const Subscription = () => {
   )
 }
 
-export default Subscription
+export default MainSubscription

@@ -1,14 +1,14 @@
 .button
-  background-image: linear-gradient(white, gray)
-  border-radius: 3px
-  border: solid 1px $text-color
-  color: $text-color
-  font-size: $font-size-xs
+  background-color: $gray-98
+  border-radius: $border-radius
+  border: solid 1px $gray-75
+  color: $gray-30
+  font-size: $font-size-xxs
   font-weight: 800
-  height: 30px
-  line-height: 30px
+  padding: $m-sm
+  height: 32px
   text-align: center
-  width: 80px
+  width: 100px
   text-decoration: none
 
   &:focus
@@ -20,13 +20,13 @@
       color: inherit !important
 
   &.-primary
-    background-image: linear-gradient($primary, green)
+    background-image: radial-gradient($primary-gradient-1, $primary-gradient-2)
     border-radius: 3px
-    border: solid 1px green
+    border: 0
     color: white
 
   &.-accent
-    background-image: linear-gradient($accent-gradient-1, $accent-gradient-2)
+    background-image: radial-gradient($accent-gradient-1, $accent-gradient-2)
     border-radius: 3px
-    border: solid 1px $accent-gradient-2
+    border: 0
     color: white
