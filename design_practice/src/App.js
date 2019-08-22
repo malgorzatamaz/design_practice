@@ -1,13 +1,21 @@
 import React from "react"
-import Header from "./components/Header"
 
-import Main from "./components/Main"
+import Features from "./components/Features"
+import Header from "./components/Header"
+import MainSubscription from "./components/Subscription/MainSubscription"
+import SubscriptionBar from "./components/Subscription/SubscriptionBar"
+import Referrals from "./components/Referrals"
 
 const App = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Main />
+      <div className="gradient-background">
+        <Header />
+        <MainSubscription />
+      </div>
+      <Features />
+      <SubscriptionBar />
+      <Referrals />
     </React.Fragment>
   )
 }

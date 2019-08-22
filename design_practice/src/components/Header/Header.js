@@ -5,21 +5,21 @@ import "./Header.sass"
 
 const Header = () => {
   return (
-    <div className="footer">
-      <Logo className="footer__icon" />
-      <a href="#features" className="footer__link">
+    <div className="header">
+      <Logo className="header__icon" />
+      <a href="#features" className="header__link">
         Features
       </a>
-      <a href="#apps" className="footer__link">
+      <a href="#apps" className="header__link">
         Apps
       </a>
-      <a href="#pricing" className="footer__link">
+      <a href="#pricing" className="header__link">
         Pricing
       </a>
-      <a href="#knowledge" className="footer__link">
+      <a href="#knowledge" className="header__link">
         Knowledge Base
       </a>
-      <a href="#business" className="footer__link">
+      <a href="#business" className="header__link">
         Business
       </a>
       <button href="#log_in" className="button">

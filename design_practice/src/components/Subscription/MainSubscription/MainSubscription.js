@@ -1,5 +1,5 @@
 import React from "react"
-import movie from "../../../../assets/images/movie.png"
+import movie from "../../../assets/images/movie.jpg"
 
 import "./MainSubscription.sass"
 
@@ -23,9 +23,9 @@ const MainSubscription = () => {
           The remote collaboration tool to help you communicate effectively &
           work productively
         </div>
-        <div className="subscription__form">
-          <label>Email address</label>
-          <input type="email" id="exampleFormControlInput1" />
+        <div>
+          <label className="form-label">Email address</label>
+          <input className="form-input" type="email" />
           <div className="subscription__actions">
             <div>
               <div>

@@ -1,0 +1,78 @@
+.referral
+    padding: 70px
+
+    &__arrow
+        align-self: center
+        height: 35px
+        width: 35px
+        background-color: $gray-90
+        padding: $m-sm
+
+    &__author
+        font-weight: $font-weight-bold
+        font-size: $font-size-xs
+
+    &__author-info
+        font-size: $font-size-xs
+        margin-bottom: $m-md
+
+    &__avatar
+        display: inline-block
+        width: 450px
+        height: 450px
+        object-fit: cover
+
+    &__container
+        @include box-shadow($gray-50)
+        background: $white
+        padding: $m-xl 
+        max-width: 400px
+        display: flex
+        flex-direction: column
+
+    &__control
+        margin-top: $m-sm
+        text-align: center
+
+    &__description
+        padding: $m-md 0
+
+    &__header
+        text-align: center
+        font-size: $font-size-lg
+        padding: $m-lg 0
+        font-weight: $font-weight-bold
+        margin: auto
+
+    &__indicator
+        display: inline-block
+        margin-right: $m-xs
+        height: 2px
+        width: 30px
+        background-color: $gray-90
+
+    &__indicator--active
+        display: inline-block
+        margin-right: $m-xs
+        height: 2px
+        width: 30px
+        background-color: $gray-30
+
+    &__left-quote
+        width: 40px
+        height: 40px
+        align-self: flex-start
+
+    &__right-quote
+        width: 40px
+        height: 40px
+        align-self: flex-end
+
+    &__slideshow
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__title
+        font-weight: $font-weight-bold
+        margin-top: $m-md

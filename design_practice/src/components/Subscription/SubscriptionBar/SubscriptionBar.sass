@@ -1,13 +1,12 @@
 .subscription-bar
-    display: flex
     align-items: center
-    justify-content: space-between
-    margin: 0 -100px
-    padding: 0 150px
-    height: 200px
     background-image: linear-gradient($bar-gradient-1, $bar-gradient-2)
     color: white
+    display: flex
     font-size: $font-size-lg
+    height: 200px
+    justify-content: space-between
+    padding: 0 150px
 
     & a
         color: white
@@ -17,17 +16,13 @@
 
     &__form
         display: flex
-        flex-direction: column
-        font-size: $font-size-xxs
 
-        & label
-            font-weight: $font-weight-bold
-
-        & input
+        & .form-input
             margin: $m-xs 0
 
     &__form-wrapper
-        display: flex
+        flex: 0 0 40%
+        font-size: $font-size-xxs
 
         & .button
             align-self: center
