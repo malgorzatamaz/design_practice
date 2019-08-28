@@ -1,0 +1,63 @@
+.referral
+    display: flex
+    align-items: center
+    flex-direction: column
+    max-width: 400px
+
+    &__author
+        font-size: $font-size-xs
+        font-weight: $font-weight-bold
+
+    &__author-info
+        font-size: $font-size-xs
+        margin-bottom: $m-md
+
+    &__avatar
+        display: inline-block
+        object-fit: cover
+
+    &__content
+        @include box-shadow($gray-50)
+        background: $white
+        display: flex
+        flex-direction: column
+        padding: $m-xl
+
+    &__description
+        padding: $m-md 0
+
+    &__left-quote
+        align-self: flex-start
+        height: 40px
+        width: 40px
+
+    &__right-quote
+        align-self: flex-end
+        height: 40px
+        width: 40px
+
+    &__title
+        font-weight: $font-weight-bold
+        margin-top: $m-md
+
++media-breakpoint-up(xl)
+    .referral
+        display: flex
+        align-items: center
+        flex-direction: row
+        flex: 0 0 800px
+        max-width: 800px
+
+        &__content
+            @include box-shadow($gray-50)
+            background: $white
+            display: flex
+            flex-direction: column
+            padding: $m-xl
+            flex: 0 0 400px
+
+        &__avatar
+            display: inline-block
+            height: 400px
+            object-fit: cover   
+            width: 400px

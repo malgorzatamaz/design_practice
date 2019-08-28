@@ -11,7 +11,7 @@ import "./Features.sass"
 
 const Features = () => {
   return (
-    <div className="features">
+    <section className="features">
       <div className="features__title">
         <span className="bold-text">Droplr</span> lets you
       </div>
@@ -41,7 +41,7 @@ const Features = () => {
         />
       </div>
       <a href="#features">Browse all awesome Droplr features</a>
-    </div>
+    </section>
   )
 }
 

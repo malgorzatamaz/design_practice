@@ -1,7 +1,7 @@
 .features
-    margin: $m-md 0
     display: flex
     flex-direction: column
+    margin: $m-md 0
 
     a
         align-self: center
@@ -10,6 +10,7 @@
     &__content
         display: flex
         flex-wrap: wrap
+        flex-direction: column
 
     &__title
         font-size: $font-size-xl
@@ -23,3 +24,12 @@
     &__title, &__subtitle
         display: flex
         justify-content: center
+
++media-breakpoint-up(xl)
+    .features
+        padding: 0 100px
+
+        &__content
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row

@@ -8,7 +8,7 @@ import Referrals from "./components/Referrals"
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="app">
       <div className="gradient-background">
         <Header />
         <MainSubscription />
@@ -16,7 +16,7 @@ const App = () => {
       <Features />
       <SubscriptionBar />
       <Referrals />
-    </React.Fragment>
+    </div>
   )
 }
 

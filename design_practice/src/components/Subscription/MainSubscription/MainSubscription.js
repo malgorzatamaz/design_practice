@@ -5,7 +5,7 @@ import "./MainSubscription.sass"
 
 const MainSubscription = () => {
   return (
-    <div className="subscription">
+    <section className="subscription">
       <div className="subscription__section">
         <img
           className="subscription__image"
@@ -42,7 +42,7 @@ const MainSubscription = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

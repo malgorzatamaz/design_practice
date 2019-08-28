@@ -1,78 +1,50 @@
-.referral
-    padding: 70px
+.referrals
 
     &__arrow
         align-self: center
-        height: 35px
-        width: 35px
         background-color: $gray-90
+        height: 35px
         padding: $m-sm
-
-    &__author
-        font-weight: $font-weight-bold
-        font-size: $font-size-xs
-
-    &__author-info
-        font-size: $font-size-xs
-        margin-bottom: $m-md
-
-    &__avatar
-        display: inline-block
-        width: 450px
-        height: 450px
-        object-fit: cover
-
-    &__container
-        @include box-shadow($gray-50)
-        background: $white
-        padding: $m-xl 
-        max-width: 400px
-        display: flex
-        flex-direction: column
+        min-width: 35px
 
     &__control
-        margin-top: $m-sm
         text-align: center
-
-    &__description
-        padding: $m-md 0
 
     &__header
-        text-align: center
         font-size: $font-size-lg
-        padding: $m-lg 0
         font-weight: $font-weight-bold
         margin: auto
+        padding: $m-lg 0
+        text-align: center
 
     &__indicator
-        display: inline-block
-        margin-right: $m-xs
-        height: 2px
-        width: 30px
         background-color: $gray-90
+        display: inline-block
+        height: 2px
+        margin-right: $m-xs
+        width: 30px
 
     &__indicator--active
-        display: inline-block
-        margin-right: $m-xs
-        height: 2px
-        width: 30px
         background-color: $gray-30
-
-    &__left-quote
-        width: 40px
-        height: 40px
-        align-self: flex-start
-
-    &__right-quote
-        width: 40px
-        height: 40px
-        align-self: flex-end
+        display: inline-block
+        height: 2px
+        margin-right: $m-xs
+        width: 30px
 
     &__slideshow
         display: flex
-        align-items: center
         justify-content: center
 
-    &__title
-        font-weight: $font-weight-bold
-        margin-top: $m-md
++media-breakpoint-up(xl)
+    .referrals
+        margin-bottom: $m-md
+
+        &__control
+            position: relative
+            left: 0
+            text-align: center
+            width: 400px
+
+        &__slideshow
+            align-items: center
+            display: flex

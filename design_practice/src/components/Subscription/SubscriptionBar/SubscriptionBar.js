@@ -4,7 +4,7 @@ import "./SubscriptionBar.sass"
 
 const SubscriptionBar = () => {
   return (
-    <div className="subscription-bar">
+    <section className="subscription-bar">
       <div>
         <div className="subscription-bar__description">
           Try <span className="bold-text">Droplr</span> for
@@ -22,7 +22,7 @@ const SubscriptionBar = () => {
         </div>
         <a href="#policy">Privacy policy</a>
       </div>
-    </div>
+    </section>
   )
 }
 
