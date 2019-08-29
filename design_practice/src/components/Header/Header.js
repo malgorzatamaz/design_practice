@@ -30,7 +30,13 @@ function Header(props) {
               <a href="#pricing" className="header__link">
                 {language === "en" ? "Pricing" : "Ceny"}
               </a>
-              <a href="#knowledge" className="header__link">
+              <a
+                href="#knowledge"
+                onClick={() => {
+                  throw new Error("Page not found!")
+                }}
+                className="header__link"
+              >
                 {language === "en" ? "Knowledge Base" : "Baza wiedzy"}
               </a>
               <a href="#business" className="header__link">

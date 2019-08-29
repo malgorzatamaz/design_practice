@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+import ErrorBoundary from "./components/ErrorBoundary"
 import Features from "./components/Features"
 import Header from "./components/Header"
 import MainSubscription from "./components/Subscription/MainSubscription"
@@ -13,15 +14,17 @@ const App = () => {
 
   return (
     <LanguageContext.Provider value={language}>
-      <div className="app">
-        <div className="gradient-background">
-          <Header setLanguage={setLanguage} />
-          <MainSubscription />
+      <ErrorBoundary>
+        <div className="app">
+          <div className="gradient-background">
+            <Header setLanguage={setLanguage} />
+            <MainSubscription />
+          </div>
+          <Features />
+          <SubscriptionBar />
+          <Referrals />
         </div>
-        <Features />
-        <SubscriptionBar />
-        <Referrals />
-      </div>
+      </ErrorBoundary>
     </LanguageContext.Provider>
   )
 }
