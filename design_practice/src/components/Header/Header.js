@@ -10,6 +10,13 @@ import "./Header.sass"
 function Header(props) {
   const [menuOpened, setMenuOpened] = useState(0)
 
+  //TODO does not work
+  // const user = null
+
+  // setTimeout(() => {
+  //   user.setName()
+  // }, 1000)
+
   return (
     <LanguageContext.Consumer>
       {language => (

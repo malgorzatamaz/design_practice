@@ -1,4 +1,3 @@
-import Feature from "./Feature"
 import React from "react"
 
 import { ReactComponent as CloudIcon } from "../../assets/icons/cloud.svg"
@@ -6,6 +5,10 @@ import { ReactComponent as CursorIcon } from "../../assets/icons/cursor.svg"
 import { ReactComponent as RocketIcon } from "../../assets/icons/rocket.svg"
 import { ReactComponent as TileIcon } from "../../assets/icons/tiles.svg"
 import texts from "./feturesTexts"
+
+import DateProvider from "./DateProvider"
+import Pokemons from "./Pokemons"
+import Feature from "./Feature"
 
 import "./Features.sass"
 
@@ -40,6 +43,20 @@ const Features = () => {
           subtitle={texts.description4}
         />
       </div>
+      <div>
+        Testing render props:
+        <DateProvider
+          render={({ date }) => {
+            return (
+              <span>
+                {date.day}-{date.month}-{date.year}
+              </span>
+            )
+          }}
+        />
+      </div>
+      <hr></hr>
+      <div>{/* Testing request: <Pokemons /> */}</div>
       <a href="#features">Browse all awesome Droplr features</a>
     </section>
   )
