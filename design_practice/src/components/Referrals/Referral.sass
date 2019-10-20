@@ -3,25 +3,38 @@
     align-items: center
     flex-direction: column
     max-width: 400px
+    +media-breakpoint-up(md)
+        flex-direction: row
+        max-width: 1000px
 
     &__author
         font-size: $font-size-xs
         font-weight: $font-weight-bold
 
-    &__author-info
-        font-size: $font-size-xs
-        margin-bottom: $m-md
+        &-info
+            font-size: $font-size-xs
+            margin-bottom: $m-md
 
     &__avatar
-        display: inline-block
         object-fit: cover
+        +media-breakpoint-up(md)
+            height: 350px  
+            width: 350px
+            +media-breakpoint-up(xl)
+                height: 400px  
+                width: 400px
 
     &__content
-        @include box-shadow($gray-50)
-        background: $white
+        +box-shadow($gray-50)
+        background-color: white
         display: flex
         flex-direction: column
         padding: $m-xl
+        +media-breakpoint-up(md)
+            max-width: 350px
+            max-height: 350px
+            +media-breakpoint-up(xl)
+                max-width: 450px
 
     &__description
         padding: $m-md 0
@@ -40,24 +53,11 @@
         font-weight: $font-weight-bold
         margin-top: $m-md
 
-+media-breakpoint-up(xl)
-    .referral
-        display: flex
-        align-items: center
-        flex-direction: row
-        flex: 0 0 800px
-        max-width: 800px
-
-        &__content
-            @include box-shadow($gray-50)
-            background: $white
-            display: flex
-            flex-direction: column
-            padding: $m-xl
-            flex: 0 0 400px
-
-        &__avatar
-            display: inline-block
-            height: 400px
-            object-fit: cover   
-            width: 400px
+.referrals__control
+    position: relative
+    text-align: center
+    top: 0
+    +media-breakpoint-up(xl)
+        top: $m-sm
+    
+        

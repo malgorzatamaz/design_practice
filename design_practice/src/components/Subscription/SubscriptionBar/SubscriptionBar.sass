@@ -1,12 +1,10 @@
 .subscription-bar
     align-items: center
-    flex-direction: column
     background-image: linear-gradient($bar-gradient-1, $bar-gradient-2)
-    color: white
     display: flex
-    font-size: $font-size-lg
-    padding: $m-md
-    align-items: center
+    height: 200px
+    justify-content: center
+    width: 100vw
 
     & a
         color: white
@@ -14,8 +12,16 @@
     & .button.-accent
         background-image: linear-gradient($dark-accent-1, $dark-accent-2)
 
-    &__description
+    &__content
+        color: white
+        display: flex
+        flex-direction: column
+        font-size: $font-size-lg
+        max-width: 1000px
         padding: $m-md
+        +media-breakpoint-up(xl)
+            flex-direction: row
+            justify-content: space-between
 
     &__form
         display: flex
@@ -24,20 +30,11 @@
             margin: $m-xs 0
 
     &__form-wrapper
-        font-size: $font-size-xxs
+        font-size: $font-size-xs
+        +media-breakpoint-up(xl)
+            flex: 0 0 40%
 
         & .button
             align-self: center
             margin-left: $m-sm
         
-
-+media-breakpoint-up(xl)
-    .subscription-bar
-        flex-direction: row
-        height: 200px
-        justify-content: space-between
-        padding: 0 150px
-
-        &__form-wrapper
-            flex: 0 0 40%
-            font-size: $font-size-xxs

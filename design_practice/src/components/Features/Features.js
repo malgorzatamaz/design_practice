@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <section className="features">
       <div className="features__title">
-        <span className="bold-text">Droplr</span> lets you
+        <b>Droplr</b>lets you
       </div>
       <div className="features__subtitle">
         Cut down on complexity and have the job done, simply
@@ -40,7 +40,7 @@ const Features = () => {
           subtitle={texts.description4}
         />
       </div>
-      <a href="#features">Browse all awesome Droplr features</a>
+      <a href="#features" className="features__link">Browse all awesome Droplr features</a>
     </section>
   )
 }

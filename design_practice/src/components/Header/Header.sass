@@ -2,67 +2,61 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    padding: 10px 0 0 30px
+    max-width: 1000px
+    padding: $m-sm
+    +media-breakpoint-up(xl)
+        padding: $m-sm 0
 
     &__menu
         display: flex
         flex-direction: column
         align-items: center
         
-    &__menu-list
-        align-items: center
-        transition: .5s
-        max-height: 0
-        display: flex
-        opacity: 0
-        flex-direction: column
+        &-list
+            justify-content: center
+            align-items: center
+            display: flex
+            flex-direction: column
+            max-height: 0
+            opacity: 0
+            transition: .5s
+            +media-breakpoint-up(md)
+                flex-direction: row
+                max-height: 100px
+                opacity: 1
 
-        //ask height about animations
-        &.-opened
-            opacity: 100
-            max-height: 500px
-            opacity: 100
+            //ask about height animations
+            &.-opened
+                opacity: 100
+                max-height: 500px
 
-    & a
-        color: $gray-40
-        font-weight: $font-weight-bold
-        margin: $m-sm
-        text-decoration: none
-
-    & button
+    button
         margin: $m-sm
 
     &__icon
-        margin-top: $m-sm
+        align-self: center
+        height: 100%
+        width: 90px
+        +media-breakpoint-up(md)
+            margin-right: auto
 
     &__hamburger
+        align-self: flex-end
         transition: .5s
         width: 30px
         height: 30px
+        +media-breakpoint-up(md)
+            display: none
 
         &.-opened
             transform: rotate(90deg) 
 
     &__link
-        color: $text-color
+        color: $gray-40
         font-size: $font-size-sm
+        font-weight: $font-weight-bold
+        margin: $m-sm
+        text-decoration: none
 
-+media-breakpoint-up(xl)
-    .header
-        padding: 0 100px
-
-        &__hamburger
-            display: none
-
-        &__menu-list
-            opacity: 100
-            display: flex 
-            align-items: center
-            flex-direction: row
-            max-height: 100px
-
-            &__icon
-                margin-right: auto
-
-            &__hamburger
-                display: none
+        
+        

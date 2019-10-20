@@ -14,7 +14,7 @@ const MainSubscription = () => {
         />
       </div>
       <div className="subscription__section">
-        <div className="subscription__title bold-text">
+        <div className="subscription__title">
           Communicate.
           <br />
           Collaborate. Complete.
@@ -28,18 +28,14 @@ const MainSubscription = () => {
           <input className="form-input" type="email" />
           <div className="subscription__actions">
             <div>
-              <div>
-                Try droplr
-                <span className="bold-text"> PRO for free for 30 days</span>
-              </div>
-              <div>
-                No credit card needed. <a href="#policy">Privacy policy</a>
-              </div>
+              Try droplr <b>PRO for free for 30 days</b>
+              <br/>
+              No credit card needed. <a href="#policy">Privacy policy</a>
             </div>
-            <button className="button -primary" href="#start">
+            <button className="button -primary">
               Get started
             </button>
-          </div>
+            </div>
         </div>
       </div>
     </section>

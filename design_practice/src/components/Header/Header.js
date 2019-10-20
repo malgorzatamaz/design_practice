@@ -10,13 +10,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Logo className="header__icon" />
+      <Logo className="header__icon"/>
       <div className="header__menu">
-        <Hamburger
-          onClick={() => setMenuOpened(!menuOpened)}
-          className={`header__hamburger ${menuOpened ? "-opened" : ""}`}
-        />
-        <div className={`header__menu-list ${menuOpened ? "-opened" : ""}`}>
+        <a href="#link" className={`header__hamburger ${menuOpened ? "-opened" : ""}`} onClick={() => setMenuOpened(!menuOpened)}>
+          <Hamburger/>
+          </a>
+        <nav className={`header__menu-list ${menuOpened ? "-opened" : ""}`}>
           <a href="#features" className="header__link">
             Features
           </a>
@@ -36,7 +35,7 @@ const Header = () => {
             LOG IN
           </button>
           <button className="button -accent">SIGN UP</button>
-        </div>
+        </nav>
       </div>
     </header>
   )
