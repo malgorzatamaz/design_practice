@@ -14,7 +14,7 @@ const PokemonsList = () => {
     getData()
     setTimeout(() => {
       source.cancel("testing cancelling")
-    }, 10)
+    }, 1000)
   })
 
   const getData = async () => {

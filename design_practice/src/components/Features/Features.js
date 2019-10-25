@@ -46,7 +46,7 @@ const Features = () => {
       <div>
         Testing render props:
         <DateProvider
-          render={({ date }) => {
+          render={date => {
             return (
               <span>
                 {date.day}-{date.month}-{date.year}
@@ -56,7 +56,9 @@ const Features = () => {
         />
       </div>
       <hr></hr>
-      <div>{/* Testing request: <Pokemons /> */}</div>
+      <div>
+        Testing request: <Pokemons />
+      </div>
       <a href="#features">Browse all awesome Droplr features</a>
     </section>
   )

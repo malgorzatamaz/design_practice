@@ -1,7 +1,7 @@
 import React from "react"
 
 const DateProvider = props => {
-  const dateNow = Date.now()
+  const dateNow = new Date()
   const date = {}
   date.month = dateNow.getMonth() + 1
   date.day = dateNow.getDate()

@@ -14,17 +14,17 @@ const App = () => {
 
   return (
     <LanguageContext.Provider value={language}>
-      <ErrorBoundary>
-        <div className="app">
-          <div className="gradient-background">
+      <div className="app">
+        <div className="gradient-background">
+          <ErrorBoundary>
             <Header setLanguage={setLanguage} />
-            <MainSubscription />
-          </div>
-          <Features />
-          <SubscriptionBar />
-          <Referrals />
+          </ErrorBoundary>
+          <MainSubscription />
         </div>
-      </ErrorBoundary>
+        <Features />
+        <SubscriptionBar />
+        <Referrals />
+      </div>
     </LanguageContext.Provider>
   )
 }

@@ -11,7 +11,7 @@ function Header(props) {
   const [menuOpened, setMenuOpened] = useState(0)
 
   //TODO does not work
-  // const user = null
+  const user = null
 
   // setTimeout(() => {
   //   user.setName()
@@ -22,6 +22,7 @@ function Header(props) {
       {language => (
         <header className="header">
           <Logo className="header__icon" />
+          {user.dupa}
           <div className="header__menu">
             <Hamburger
               onClick={() => setMenuOpened(!menuOpened)}

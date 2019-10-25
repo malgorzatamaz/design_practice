@@ -5,14 +5,16 @@ import DateProvider from "../DateProvider.js"
 import Features from "../Features.js"
 
 describe("Features renders", () => {
-  const wrapper = shallow(<Features />).find(DateProvider)
+  const wrapper = shallow(<Features />)
 
   it("should render date of my birth", () => {
-    const wrapperRender = wrapper.prop("render")
-    const wrapperWithDate = mount(
-      wrapperRender({ date: { day: 25, month: 11, year: 1994 } })
-    )
-    expect(wrapperWithDate.text()).toBe("25-11-1994")
+    const wrapperRender = wrapper.find(DateProvider).renderProp("render")({
+      day: 25,
+      month: 11,
+      year: 1994
+    })
+
+    expect(wrapperRender.text()).toMatchSnapshot()
   })
 
   it("should render current date", () => {
@@ -23,14 +25,13 @@ describe("Features renders", () => {
       year: today.getFullYear()
     }
 
-    const wrapperRender = wrapper.prop("render")
-    const wrapperWithDate = mount(
-      wrapperRender({
-        date
-      })
-    )
-    expect(wrapperWithDate.text()).toBe(
-      `${date.day}-${date.month}-${date.year}`
-    )
+    const wrapperRender = wrapper.find(DateProvider).renderProp("render")(date)
+
+    expect(
+      wrapper
+        .find(DateProvider)
+        .dive()
+        .text()
+    ).toBe(`${date.day}-${date.month}-${date.year}`)
   })
 })
