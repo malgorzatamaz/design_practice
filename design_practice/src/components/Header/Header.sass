@@ -4,8 +4,6 @@
     justify-content: space-between
     max-width: 1000px
     padding: $m-sm
-    +media-breakpoint-up(xl)
-        padding: $m-sm 0
 
     &__menu
         display: flex
@@ -19,34 +17,33 @@
             flex-direction: column
             max-height: 0
             opacity: 0
-            transition: .5s
-            +media-breakpoint-up(md)
-                flex-direction: row
-                max-height: 100px
-                opacity: 1
+            transition: opacity .5s
 
-            //ask about height animations
             &.-opened
-                opacity: 100
+                opacity: 1
                 max-height: 500px
 
     button
         margin: $m-sm
 
     &__icon
-        align-self: center
+        padding-top: $m-md
         height: 100%
         width: 90px
-        +media-breakpoint-up(md)
-            margin-right: auto
 
     &__hamburger
         align-self: flex-end
         transition: .5s
-        width: 30px
-        height: 30px
-        +media-breakpoint-up(md)
-            display: none
+        width: 40px
+        height: 40px
+        outline:none
+        background-color: transparent
+        background-repeat:no-repeat
+        border: none
+        overflow: hidden
+
+        &:focus 
+            outline: none
 
         &.-opened
             transform: rotate(90deg) 
@@ -58,5 +55,21 @@
         margin: $m-sm
         text-decoration: none
 
-        
-        
++media-breakpoint-up(md)
+    .header
+        &__menu-list
+            flex-direction: row
+            max-height: 100px
+            opacity: 1
+
+        &__icon
+            align-self: center
+            margin-right: auto
+            padding-top: 0
+
+        &__hamburger
+            display: none
+
++media-breakpoint-up(xl)
+    .header
+        padding: $m-sm 0

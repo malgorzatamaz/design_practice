@@ -1,11 +1,8 @@
 .referral
     display: flex
-    align-items: center
+    align-items: flex-start
     flex-direction: column
     max-width: 400px
-    +media-breakpoint-up(md)
-        flex-direction: row
-        max-width: 1000px
 
     &__author
         font-size: $font-size-xs
@@ -17,12 +14,6 @@
 
     &__avatar
         object-fit: cover
-        +media-breakpoint-up(md)
-            height: 350px  
-            width: 350px
-            +media-breakpoint-up(xl)
-                height: 400px  
-                width: 400px
 
     &__content
         +box-shadow($gray-50)
@@ -30,11 +21,6 @@
         display: flex
         flex-direction: column
         padding: $m-xl
-        +media-breakpoint-up(md)
-            max-width: 350px
-            max-height: 350px
-            +media-breakpoint-up(xl)
-                max-width: 450px
 
     &__description
         padding: $m-md 0
@@ -57,7 +43,29 @@
     position: relative
     text-align: center
     top: 0
-    +media-breakpoint-up(xl)
-        top: $m-sm
     
-        
++media-breakpoint-up(md)
+    .referral
+        flex-direction: row
+        max-width: 1000px
+
+        &__avatar
+            height: 350px  
+            width: 350px
+
+        &__content
+            max-height: 350px
+
++media-breakpoint-up(xl)
+    .referral
+        align-items: center
+
+        &__avatar
+            height: 400px  
+            width: 400px
+
+        &__content
+            max-width: 450px
+
+    .referrals__control
+        top: $m-sm

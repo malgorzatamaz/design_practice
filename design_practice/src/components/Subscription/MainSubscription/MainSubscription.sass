@@ -1,13 +1,6 @@
 .subscription
-    align-self: center
     max-width: 1000px
     padding: $m-md
-    +media-breakpoint-up(md)
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        +media-breakpoint-up(xl)
-            padding: 40px 0
 
     &__title
         color: $gray-30
@@ -15,8 +8,6 @@
         font-weight: $font-weight-bold
         margin-bottom: $m-md
         padding-top: $m-md
-        +media-breakpoint-up(md)
-           padding-top: 0
 
     &__subtitle
         color: $gray-40
@@ -37,5 +28,15 @@
     &__section
         flex: 0 1 50%
 
-    &__image
-        align-self: center
++media-breakpoint-up(md)
+    .subscription
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        &__title
+           padding-top: 0
+        
++media-breakpoint-up(xl)
+    .subscription
+        padding: 40px 0

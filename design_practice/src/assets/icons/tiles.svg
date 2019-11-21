@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 33.109 33.109" style="enable-background:new 0 0 33.109 33.109;" xml:space="preserve"><g><g>
-	<path d="M33.109,0.105v14.621H18.49V0.105H33.109z M0,14.727h14.62V0.105H0V14.727z M18.49,33.004h14.619V18.385H18.49V33.004z    M0,33.004h14.62V18.385H0V33.004z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-</g></g> </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.109 33.109">
+  <defs/>
+  <path fill="#FFF" d="M33.109.105v14.621H18.49V.105h14.619zM0 14.727h14.62V.105H0v14.622zm18.49 18.277h14.619V18.385H18.49v14.619zm-18.49 0h14.62V18.385H0v14.619z" class="active-path" data-old_color="#000000" data-original="#000000"/>
+</svg>

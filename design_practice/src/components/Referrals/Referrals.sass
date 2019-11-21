@@ -2,7 +2,6 @@
     margin-bottom: $m-md
 
     &__arrow
-        align-self: center
         background-color: $gray-90
         height: 35px
         padding: $m-sm
@@ -28,5 +27,7 @@
     &__slideshow
         display: flex
         justify-content: center
-        +media-breakpoint-up(xl)
-            align-items: center
+            
++media-breakpoint-up(xl)
+    .referrals__slideshow
+        align-items: center

@@ -11,9 +11,9 @@ import "./Features.sass"
 
 const Features = () => {
   return (
-    <section className="features">
+    <section id="features" className="features">
       <div className="features__title">
-        <b>Droplr</b>lets you
+        <strong>Droplr</strong>lets you
       </div>
       <div className="features__subtitle">
         Cut down on complexity and have the job done, simply
@@ -40,7 +40,9 @@ const Features = () => {
           subtitle={texts.description4}
         />
       </div>
-      <a href="#features" className="features__link">Browse all awesome Droplr features</a>
+      <a href="#features" className="features__link">
+        Browse all awesome Droplr features
+      </a>
     </section>
   )
 }

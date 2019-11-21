@@ -9,7 +9,7 @@ import Gradient from "./components/Gradient"
 
 const App = () => {
   return (
-    <React.Fragment>
+    <>
       <Gradient>
         <Header />
         <MainSubscription />
@@ -17,7 +17,7 @@ const App = () => {
       <Features />
       <SubscriptionBar />
       <Referrals />
-    </React.Fragment>
+    </>
   )
 }
 
