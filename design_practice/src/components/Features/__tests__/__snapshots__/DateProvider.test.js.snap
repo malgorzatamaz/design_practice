@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Features renders should render date of my birth 1`] = `"25-11-1994"`;
