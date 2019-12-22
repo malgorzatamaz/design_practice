@@ -8,15 +8,13 @@ body
     size: $font-size-base
   line-height: $line-height-base
   margin: 0
-  //ask about resizing
-  min-width: 500px
+  
+#root
+  display: flex
+  flex-direction: column
+  align-items: center
 
-b,
-strong,
-.bold-text
-  font-weight: $font-weight-bold
-
-a,§
+a,
 button,
 input[type='button']
   cursor: pointer
@@ -24,13 +22,3 @@ input[type='button']
 img
   display: block
   max-width: 100%
-
-// ask
-.gradient-background
-  background-image: linear-gradient(300deg, white, $gray-98)
-
-.app
-  display: flex
-  flex-direction: column
-  align-items: stretch
-

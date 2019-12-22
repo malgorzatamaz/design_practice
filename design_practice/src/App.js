@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import MainSubscription from "./components/Subscription/MainSubscription"
 import SubscriptionBar from "./components/Subscription/SubscriptionBar"
 import Referrals from "./components/Referrals"
+import Gradient from "./components/Gradient"
 
 import LanguageContext from "./utils/LanguageContext"
 
@@ -14,17 +15,15 @@ const App = () => {
 
   return (
     <LanguageContext.Provider value={language}>
-      <div className="app">
-        <div className="gradient-background">
-          <ErrorBoundary>
-            <Header setLanguage={setLanguage} />
-          </ErrorBoundary>
-          <MainSubscription />
-        </div>
-        <Features />
-        <SubscriptionBar />
-        <Referrals />
-      </div>
+      <Gradient>
+        <ErrorBoundary>
+          <Header setLanguage={setLanguage} />
+        </ErrorBoundary>
+        <MainSubscription />
+      </Gradient>
+      <Features />
+      <SubscriptionBar />
+      <Referrals />
     </LanguageContext.Provider>
   )
 }

@@ -14,9 +14,9 @@ import "./Features.sass"
 
 const Features = () => {
   return (
-    <section className="features">
+    <section id="features" className="features">
       <div className="features__title">
-        <span className="bold-text">Droplr</span> lets you
+        <strong>Droplr</strong>lets you
       </div>
       <div className="features__subtitle">
         Cut down on complexity and have the job done, simply
@@ -59,7 +59,9 @@ const Features = () => {
       <div>
         Testing request: <Pokemons />
       </div>
-      <a href="#features">Browse all awesome Droplr features</a>
+      <a href="#features" className="features__link">
+        Browse all awesome Droplr features
+      </a>
     </section>
   )
 }

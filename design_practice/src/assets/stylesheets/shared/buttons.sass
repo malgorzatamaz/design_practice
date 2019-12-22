@@ -3,10 +3,9 @@
   border-radius: $border-radius
   border: solid 1px $gray-75
   color: $gray-30
-  font-size: $font-size-xxs
+  font-size: $font-size-xs
   font-weight: 800
-  padding: $m-sm
-  height: 32px
+  height: 28px
   text-align: center
   min-width: 100px
   text-decoration: none
@@ -20,6 +19,7 @@
       color: inherit !important
 
   &.-primary
+    +animate(opacity)
     animation: 1s infinite linear pulse
     background-image: radial-gradient($primary-gradient-1, $primary-gradient-2)
     border-radius: 3px
@@ -29,11 +29,11 @@
     &:hover
       opacity: 0
       cursor: none
-      +animate(opacity)
 
   &.-accent
     background-image: radial-gradient($accent-gradient-1, $accent-gradient-2)
     border-radius: 3px
     border: 0
     color: white
+
 

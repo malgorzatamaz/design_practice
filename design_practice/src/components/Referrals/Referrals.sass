@@ -1,14 +1,11 @@
 .referrals
+    margin-bottom: $m-md
 
     &__arrow
-        align-self: center
         background-color: $gray-90
         height: 35px
         padding: $m-sm
         min-width: 35px
-
-    &__control
-        text-align: center
 
     &__header
         font-size: $font-size-lg
@@ -24,27 +21,13 @@
         margin-right: $m-xs
         width: 30px
 
-    &__indicator--active
-        background-color: $gray-30
-        display: inline-block
-        height: 2px
-        margin-right: $m-xs
-        width: 30px
+        &.-active
+            background-color: $gray-30
 
     &__slideshow
         display: flex
         justify-content: center
-
+            
 +media-breakpoint-up(xl)
-    .referrals
-        margin-bottom: $m-md
-
-        &__control
-            position: relative
-            left: 0
-            text-align: center
-            width: 400px
-
-        &__slideshow
-            align-items: center
-            display: flex
+    .referrals__slideshow
+        align-items: center
