@@ -1,0 +1,32 @@
+.features
+    display: flex
+    flex-direction: column
+    padding: $m-md 0
+    max-width: 1000px
+
+    &__link
+        align-self: center
+        padding: $m-lg 0
+
+    &__content
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+
+    &__title
+        font-size: $font-size-xl
+
+        b
+            margin-right: $m-xs
+
+    &__title, 
+    &__subtitle
+        text-align: center
+        margin-bottom: $m-md
+
+
++media-breakpoint-up(xl)
+    .features__content
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row

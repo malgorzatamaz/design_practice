@@ -1,0 +1,42 @@
+.subscription
+    max-width: 1000px
+    padding: $m-md
+
+    &__title
+        color: $gray-30
+        font-size: $font-size-xl
+        font-weight: $font-weight-bold
+        margin-bottom: $m-md
+        padding-top: $m-md
+
+    &__subtitle
+        color: $gray-40
+        font-size: $font-size-base
+        margin-bottom: $m-md
+
+    &__actions
+        align-items: center
+        display: flex
+        flex-direction: row
+        font-size: $font-size-xs
+        justify-content: space-between
+        margin-top: $m-md
+
+        a
+            color: $text-color
+
+    &__section
+        flex: 0 1 50%
+
++media-breakpoint-up(md)
+    .subscription
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        &__title
+           padding-top: 0
+        
++media-breakpoint-up(xl)
+    .subscription
+        padding: 40px 0

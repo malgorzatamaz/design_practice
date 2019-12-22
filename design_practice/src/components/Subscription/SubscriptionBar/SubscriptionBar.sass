@@ -1,0 +1,43 @@
+.subscription-bar
+    align-items: center
+    background-image: linear-gradient($bar-gradient-1, $bar-gradient-2)
+    display: flex
+    height: 200px
+    justify-content: center
+    width: 100vw
+
+    a
+        color: white
+
+    .button.-accent
+        background-image: linear-gradient($dark-accent-1, $dark-accent-2)
+
+    &__content
+        color: white
+        display: flex
+        flex-direction: column
+        font-size: $font-size-lg
+        max-width: 1000px
+        padding: $m-md
+
+    &__form
+        display: flex
+
+        .form-input
+            margin: $m-xs 0
+
+    &__form-wrapper
+        font-size: $font-size-xs
+
+        .button
+            margin-left: $m-sm
+        
+
++media-breakpoint-up(xl)
+    .subscription-bar
+        &__content
+            flex-direction: row
+            justify-content: space-between
+
+        &__form-wrapper
+            flex: 0 0 40%

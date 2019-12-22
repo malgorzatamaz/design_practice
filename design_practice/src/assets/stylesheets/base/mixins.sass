@@ -1,0 +1,11 @@
+=animate($property...)
+  transition-property: $property
+  transition-duration: $transition-duration
+  transition-timing-function: $transition-function
+
+=box-shadow($color)
+  box-shadow: 0 5px 15px rgba($color, .2)
+
+=media-touch-devices
+  @media (any-pointer: coarse)
+    @content

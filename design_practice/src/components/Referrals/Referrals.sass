@@ -1,0 +1,33 @@
+.referrals
+    margin-bottom: $m-md
+
+    &__arrow
+        background-color: $gray-90
+        height: 35px
+        padding: $m-sm
+        min-width: 35px
+
+    &__header
+        font-size: $font-size-lg
+        font-weight: $font-weight-bold
+        margin: auto
+        padding: $m-lg 0
+        text-align: center
+
+    &__indicator
+        background-color: $gray-90
+        display: inline-block
+        height: 2px
+        margin-right: $m-xs
+        width: 30px
+
+        &.-active
+            background-color: $gray-30
+
+    &__slideshow
+        display: flex
+        justify-content: center
+            
++media-breakpoint-up(xl)
+    .referrals__slideshow
+        align-items: center

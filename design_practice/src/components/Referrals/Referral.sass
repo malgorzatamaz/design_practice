@@ -1,0 +1,71 @@
+.referral
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    max-width: 400px
+
+    &__author
+        font-size: $font-size-xs
+        font-weight: $font-weight-bold
+
+        &-info
+            font-size: $font-size-xs
+            margin-bottom: $m-md
+
+    &__avatar
+        object-fit: cover
+
+    &__content
+        +box-shadow($gray-50)
+        background-color: white
+        display: flex
+        flex-direction: column
+        padding: $m-xl
+
+    &__description
+        padding: $m-md 0
+
+    &__left-quote
+        align-self: flex-start
+        height: 40px
+        width: 40px
+
+    &__right-quote
+        align-self: flex-end
+        height: 40px
+        width: 40px
+
+    &__title
+        font-weight: $font-weight-bold
+        margin-top: $m-md
+
+.referrals__control
+    position: relative
+    text-align: center
+    top: 0
+    
++media-breakpoint-up(md)
+    .referral
+        flex-direction: row
+        max-width: 1000px
+
+        &__avatar
+            height: 350px  
+            width: 350px
+
+        &__content
+            max-height: 350px
+
++media-breakpoint-up(xl)
+    .referral
+        align-items: center
+
+        &__avatar
+            height: 400px  
+            width: 400px
+
+        &__content
+            max-width: 450px
+
+    .referrals__control
+        top: $m-sm

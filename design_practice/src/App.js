@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
+import Features from "./components/Features"
+import Header from "./components/Header"
+import MainSubscription from "./components/Subscription/MainSubscription"
+import SubscriptionBar from "./components/Subscription/SubscriptionBar"
+import Referrals from "./components/Referrals"
+import Gradient from "./components/Gradient"
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Gradient>
+        <Header />
+        <MainSubscription />
+      </Gradient>
+      <Features />
+      <SubscriptionBar />
+      <Referrals />
+    </>
+  )
 }
 
-export default App;
+export default App

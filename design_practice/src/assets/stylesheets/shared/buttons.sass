@@ -1,0 +1,39 @@
+.button
+  background-color: $gray-98
+  border-radius: $border-radius
+  border: solid 1px $gray-75
+  color: $gray-30
+  font-size: $font-size-xs
+  font-weight: 800
+  height: 28px
+  text-align: center
+  min-width: 100px
+  text-decoration: none
+
+  &:focus
+    outline: none
+
+  &:hover
+    +media-touch-devices
+      background-color: inherit !important
+      color: inherit !important
+
+  &.-primary
+    +animate(opacity)
+    animation: 1s infinite linear pulse
+    background-image: radial-gradient($primary-gradient-1, $primary-gradient-2)
+    border-radius: 3px
+    border: 0
+    color: white
+
+    &:hover
+      opacity: 0
+      cursor: none
+
+  &.-accent
+    background-image: radial-gradient($accent-gradient-1, $accent-gradient-2)
+    border-radius: 3px
+    border: 0
+    color: white
+
+
