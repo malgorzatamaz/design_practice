@@ -17,7 +17,7 @@ const MainSubscription = () => {
       </div>
       <div className="subscription__section">
         <div className="subscription__title">
-          Communicate.
+          Hello. Hello. Communicate.
           <br />
           Collaborate. Complete.
         </div>
